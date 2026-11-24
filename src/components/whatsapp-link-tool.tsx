@@ -27,7 +27,7 @@ const copy = {
     errors: {
       empty: 'Escribe el número de WhatsApp del negocio.',
       letters: 'El número solo puede llevar cifras, espacios, guiones, paréntesis y un + al principio.',
-      prefix: 'Elige el país en el desplegable o escribe el número con su prefijo y un + delante (por ejemplo, +34 612 345 678).',
+      prefix: 'Elige el país en el desplegable o escribe el número con su prefijo y un + delante (por ejemplo, +34 600 000 000).',
       too_short: 'Al número le faltan cifras. Revisa que esté completo y que el prefijo del país sea el correcto.',
       too_long: 'Al número le sobran cifras: un número internacional tiene como máximo 15. ¿Has escrito el prefijo dos veces?',
       es_length: 'Un número español tiene 9 cifras (sin contar el 34). Revisa que no falte ni sobre ninguna.',
@@ -194,7 +194,7 @@ export function WhatsAppLinkTool({ language }: { language: Language }) {
             <input
               id={`${id}-phone`} className="lead-input" type="tel" inputMode="tel" autoComplete="off" maxLength={30}
               value={phone} onChange={(e) => setPhone(e.target.value)} onBlur={() => setTouched(true)}
-              placeholder={prefix === '34' ? '612 345 678' : ''}
+              placeholder={prefix === '34' ? '600 000 000' : ''}
               aria-invalid={showError || undefined} aria-describedby={`${id}-phone-hint ${id}-phone-error`}
             />
             <p id={`${id}-phone-hint`} className="tool-hint">{t.phoneHint}</p>

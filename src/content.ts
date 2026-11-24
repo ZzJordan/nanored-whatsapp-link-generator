@@ -37,7 +37,7 @@ export const content: Record<'es' | 'en', PageContent> = {
       {
         "title": "Qué es un enlace wa.me",
         "paragraphs": [
-          "Un enlace wa.me es la dirección oficial de WhatsApp para abrir un chat con un número sin tenerlo guardado en la agenda. Tiene la forma https://wa.me/34612345678: el número va en formato internacional, solo con cifras, sin el + ni espacios.",
+          "Un enlace wa.me es la dirección oficial de WhatsApp para abrir un chat con un número sin tenerlo guardado en la agenda. Tiene la forma https://wa.me/34600000000: el número va en formato internacional, solo con cifras, sin el + ni espacios.",
           "Si le añades ?text= seguido de un mensaje codificado, el chat se abre con ese texto ya escrito. Así el cliente no tiene que pensar qué decir y tú sabes desde el primer mensaje de dónde viene o qué quiere.",
           "Funciona en el móvil (abre la app de WhatsApp o WhatsApp Business) y en el ordenador (abre WhatsApp Web o la app de escritorio)."
         ]
@@ -136,7 +136,7 @@ export const content: Record<'es' | 'en', PageContent> = {
       {
         "title": "What is a wa.me link?",
         "paragraphs": [
-          "A wa.me link is WhatsApp’s official address for opening a chat with a number without saving it as a contact. It looks like https://wa.me/34612345678: the number goes in international format, digits only, without the + or spaces.",
+          "A wa.me link is WhatsApp’s official address for opening a chat with a number without saving it as a contact. It looks like https://wa.me/34600000000: the number goes in international format, digits only, without the + or spaces.",
           "If you add ?text= followed by an encoded message, the chat opens with that text already typed. The customer does not have to think about what to say, and you know from the first message where they came from or what they want.",
           "It works on mobile (opening the WhatsApp or WhatsApp Business app) and on desktop (opening WhatsApp Web or the desktop app)."
         ]
