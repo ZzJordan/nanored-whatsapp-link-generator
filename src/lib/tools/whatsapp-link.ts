@@ -85,7 +85,7 @@ export function normalizePhone(prefix: string, raw: string): PhoneResult {
     if (!p) return { ok: false, error: 'prefix' }
     // El 0 de marcación nacional (Reino Unido, Francia, Italia no, etc.) no va en wa.me, salvo en Italia.
     const national = p === '39' ? digits : digits.replace(/^0+/, '')
-    // Si alguien escribe el prefijo dos veces (34 + 34612345678), no se duplica.
+    // Si alguien escribe el prefijo dos veces (34 + 34600000000), no se duplica.
     full = national.startsWith(p) && national.length - p.length >= 8 && p !== '1' ? national : p + national
   }
   full = full.replace(/^0+/, '')
@@ -110,7 +110,7 @@ export function buildWaLink(digits: string, message = ''): string {
   return `https://wa.me/${digits}${text ? `?text=${encodeURIComponent(text)}` : ''}`
 }
 
-/** Número en formato legible: +34 612 345 678. */
+/** Número en formato legible: +34 600 000 000. */
 export function formatPhone(digits: string): string {
   if (digits.startsWith('34') && digits.length === 11) {
     const n = digits.slice(2)
